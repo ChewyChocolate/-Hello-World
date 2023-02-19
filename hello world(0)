@@ -3,7 +3,7 @@
 using namespace std;
 
 int main(){
-	char letter[] {'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w' , 'x', 'y', 'z'};
+	char letter[] {'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w' , 'x', 'y', 'z', '\0'};
 	int fl1,fl2,fl3,fl4,fl5;
 	int sl1,sl2,sl3,sl4,sl5;
 	int sleepNum = 50000;
@@ -26,7 +26,7 @@ int main(){
 		cout << letter[fl1] <<letter[fl2] <<letter[fl3]<< letter[fl4]<< endl;
 		usleep(sleepNum);
 	}
-	for(fl5 = 0; fl5 < 15; fl5++){
+	for(fl5 = 0; fl5 < 14; fl5++){
 		cout << letter[fl1] <<letter[fl2] <<letter[fl3]<< letter[fl4] << letter[fl5]<<endl;
 		usleep(sleepNum);
 	}
@@ -39,25 +39,25 @@ int main(){
 		cout << letter[sl1]<<endl;
 		usleep(sleepNum);
 	}
-	for(int sl2 = 0; sl2 < 14; sl2++){
+	for(sl2 = 0; sl2 < 14; sl2++){
 		cout << letter[fl1] <<letter[fl2] <<letter[fl3]<< letter[fl4] << letter[fl5];
 		cout << " ";
 		cout << letter[sl1] << letter[sl2] <<endl;
 		usleep(sleepNum);
 	}
-	for(int sl3 = 0; sl3 < 17; sl3++){
+	for(sl3 = 0; sl3 < 17; sl3++){
 		cout << letter[fl1] <<letter[fl2] <<letter[fl3]<< letter[fl4] << letter[fl5];
 		cout << " ";
 		cout << letter[sl1] << letter[sl2] << letter[sl3]<< endl;
 		usleep(sleepNum);
 	}
-	for(int sl4 = 0; sl4 < 11; sl4++){
+	for(sl4 = 0; sl4 < 11; sl4++){
 		cout << letter[fl1] <<letter[fl2] <<letter[fl3]<< letter[fl4] << letter[fl5];
 		cout << " ";
 		cout << letter[sl1] << letter[sl2] << letter[sl3] << letter[sl4]<<endl;
 		usleep(sleepNum);
 	}
-	for(int sl5 = 0; sl5 < 3; sl5++){
+	for(sl5 = 0; sl5 < 4; sl5++){
 		cout << letter[fl1] <<letter[fl2] <<letter[fl3]<< letter[fl4] << letter[fl5];
 		cout << " ";
 		cout << letter[sl1] << letter[sl2] << letter[sl3] << letter[sl4] << letter[sl5]<<endl;
